@@ -95,6 +95,16 @@ body {
       cursor:'pointer';
       padding: 10px;
       height: 20px;
+      .fab-icon-text{
+        position: relative;
+        top: -25px;
+        margin-left: 5px;
+        margin-right: 5px;
+        .fab-icon-link{
+          text-decoration: none;
+          color: #fff;
+        }
+      } 
     }
     .fab-container-mobile {
       position: fixed;
@@ -115,7 +125,11 @@ body {
       right:-115px;
       position:absolute;
     }
-    .navigation{
+    .total-body{
+      .navigation-container{
+        margin-top:30px;
+        margin-left:30px;
+        margin-right:30px;
         ul {
           display: flex;
           padding: 0;
@@ -126,6 +140,89 @@ body {
             width:180px;
           }
         }
+      }
+      .animation-container {
+        border-bottom: 1px solid #bdf289;
+        margin: 30px;
+        .cashew2{
+          position: absolute;
+          top: 161px;
+          left: 15px;
+          transform: rotate(-56deg);
+        }
+        .real_cashews {
+          font-family: "poppins_bold";
+          font-size: 100px;
+          margin: 62px 0px 0px 77px;
+          @media (max-width:780px){
+            margin-left: 50px !important;
+          }
+          .not_made {
+            font-family: "poppins_black";
+            position: relative;
+            top: -50px;
+          }
+          .cashews{
+            position: relative;
+            top: -30px;
+          }
+          .made{
+           position: relative;
+           top: -30px; 
+          }
+        }
+        .img-position{
+          width: 1224px;
+          height: 1224px;
+          position: absolute;
+          top: -387px;
+          right: -80px;
+        }
+        .cashew2{
+          position: absolute;
+          top: -36px;
+          left: 206px;
+        }
+        .cashew1{
+          position: absolute;
+          top: 300px;
+          left: 450px;
+        }
+      }
+      .about-us-container{
+        border-bottom: 1px solid #bdf289;
+        padding-bottom: 150px;
+        margin: -30px;
+        position: relative;
+        .cashew-pack{
+          position: absolute;
+          top: -345px;
+          width: 1700px;
+          left: -701px;
+        }
+        .leaf1{
+          position: absolute;
+          left: 500px;
+          top: 100px;
+        }
+        .about-us-section{
+          padding-right: 50px;
+          .about_us{
+            font-family: "poppins_bold";
+            font-size: 100px;
+          }
+          .healthy_cashews{
+            font-family: "poppins_regular";
+            font-size:40px;
+          }
+          .sailing_para{
+            font-family: 'poppins_light';
+            margin-left: auto;
+            max-width: 865px;
+          }
+        }
+      }
+      
         .position_heading {
           position: relative;
           top:-50px;
@@ -138,14 +235,13 @@ body {
         .navigation-item{
           font-family:'poppins_regular';
         }
-        .real_cashews {
-          font-family: "poppins_bold";
-          .not_made {
-            font-family: "poppins_black";
-          }
-        }
+        
         .about_us {
           font-family: "poppins_bold";
+          @media (max-width:780px){
+            font-size:15px;
+            background: green !important;
+          }
         }
         .healthy_cashews{
           font-family: "poppins_medium";

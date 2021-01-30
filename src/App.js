@@ -41,22 +41,22 @@ class App extends Component {
       <Fragment>
         <BrowserView>
           <div className="app" >
-          <div className="fab-container" >
-            <div className="fab-icon-holder">
-              <p style={{position:'relative', top:'-25px', marginLeft:'5px', marginRight:'5px'}} className="sailing_para">
-              <a style={{color:'#fff', textDecoration:'none'}} href="https://api.whatsapp.com/send?phone=919526750675&text=Hello,%20I%20would%20like%20to%20know%20about%20your%20products." target="_blank">
-              <WhatsAppIcon size="sm" style={{position:'relative', top:'7px' , marginRight:'10px'}} /> 
-              How can I help you ? 
-              </a>
-              </p>
+            <div className="fab-container" >
+              <div className="fab-icon-holder">
+                <p className="sailing_para fab-icon-text ">
+                  <a className="fab-icon-link" href="https://api.whatsapp.com/send?phone=919526750675&text=Hello,%20I%20would%20like%20to%20know%20about%20your%20products." target="_blank">
+                    <WhatsAppIcon size="sm" style={{position:'relative', top:'7px' , marginRight:'10px'}} /> 
+                    How can I help you ? 
+                  </a>
+                </p>
+              </div>
             </div>
-            </div>
-          <div className="navigation">
-            <Grid container style={{  marginTop:'30px', marginLeft:'30px', marginRight:'30px'}} >
-              <Grid item md={5} xs={12} lg={5} xl={5} >
-                <img src={logo} alt="shabe" width={300} />
-              </Grid>
-                <Grid item md={7} xs={0} lg={7} xl={7} className="navigation-item" > 
+            <div className="total-body">
+              <Grid container  className="navigation-container" >
+                <Grid item md={5} xs={12} lg={5} xl={5}  >
+                  <img src={logo} alt="shabe" width={300} />
+                </Grid>
+                <Grid item md={7} xs={0} lg={7} xl={7} className="navigation-item " > 
                 <List className="list-item" >
                   <ListItem>HOME</ListItem>
                   <ListItem>ABOUT US</ListItem>
@@ -66,57 +66,57 @@ class App extends Component {
                 </List>
               </Grid> 
             </Grid>
-            <Grid container spacing={0} style={{borderBottom:"1px solid #bdf289", margin:'30px'}}  >
-              <Grid item md={6} xs={12} style={{marginBottom:'100px'}} >
-                <span style={{position: "absolute",top: "161px",left: "15px",transform: 'rotate(-56deg)', }}>
+            <Grid container spacing={0} className="animation-container" >
+              <Grid item md={6} xs={12} >
+                <span style={{position: "absolute",top: "161px",left: "15px",transform: 'rotate(-56deg)', }} className="cashew2">
                   <img src={cashew2} alt="cashew2" width ="93px" className="animate__animated animate__bounceInLeft" />
                 </span>
-                <h1 style={{fontSize:'100px', marginLeft:'77px', position:'relative', top:'62px'}} className="animate__animated animate__bounceInLeft real_cashews" >
+                <h1 className="animate__animated animate__bounceInLeft real_cashews" >
                   REAL
                   <br/>
-                  <span style={{position:'relative', top:'-30px'}} >CASHEWS</span><br/>
-                  <span style={{fontWeight:'900', position:'relative', top:'-50px'}} className="not_made" > 
+                  <span className="cashews" >CASHEWS</span><br/>
+                  <span className="not_made" > 
                   <span >ARE NOT </span> <br/>
-                    <span style={{position:'relative', top:'-30px'}} >MADE.</span>
+                    <span className="made" >MADE.</span>
                   </span>
                 </h1>
               </Grid>
               <Grid item md={6} xs={12} style={{position:'relative'}}>
                 <div className="" style={{position:'relative', top:'100px'}}>
-                  <img src={ah_banner_gradient} alt="banner3" style={{width:'1224px', height:'1224px', position:'absolute', top:'-387px', right:'-80px'}} className="animate__animated animate__bounceIn" />
-                  <img src={AH_BANNER_LEAVES} alt="leaves" style={{width:'1224px', height:'1224px', position:'absolute', top:'-387px', right:'-80px'}} className="animate__animated animate__bounceInDown" />
-                  <img src={banner_sky} alt="sky" style={{width:'1224px', height:'1224px', position:'absolute', top:'-387px', right:'-80px'}}  className="animate__animated animate__backInUp" />
-                  <img src={cashewBack} alt="cashew_back" style={{width:'1224px', height:'1224px', position:'absolute', top:'-387px', right:'-80px'}} className="animate__animated animate__backInUp" />
-                  <img src={cashewFront} alt="cashew_front" style={{width:'1224px', height:'1224px', position:'absolute', top:'-387px', right:'-80px'}} className="animate__animated animate__backInDown" />
-                  <img src={nuts} alt="nuts" style={{width:'1224px', height:'1224px', position:'absolute', top:'-387px', right:'-80px'}} className="animate__animated animate__bounceInUp" />
-                  <img src={cashew2} alt="cashew2" width ="93px" style={{position: "absolute",top: "-36px",left: "206px", }} className="animate__animated animate__bounceInDown"  />
-                  <img src={cashew1} alt="cashew1" width="120px" style={{position:'absolute', top:'300px', left:'450px'}}  className="animate__animated animate__bounceInDown"/>
+                  <img src={ah_banner_gradient} alt="banner3" className="animate__animated animate__bounceIn img-position" />
+                  <img src={AH_BANNER_LEAVES} alt="leaves"  className="animate__animated animate__bounceInDown img-position" />
+                  <img src={banner_sky} alt="sky"   className="animate__animated animate__backInUp img-position" />
+                  <img src={cashewBack} alt="cashew_back"  className="animate__animated animate__backInUp img-position" />
+                  <img src={cashewFront} alt="cashew_front"  className="animate__animated animate__backInDown img-position" />
+                  <img src={nuts} alt="nuts"  className="animate__animated animate__bounceInUp img-position" />
+                  <img src={cashew2} alt="cashew2" width ="93px"  className="animate__animated animate__bounceInDown cashew2"  />
+                  <img src={cashew1} alt="cashew1" width="120px"  className="animate__animated animate__bounceInDown cashew1"/>
                 </div>
               </Grid> 
             </Grid>
-            <Grid container style={{borderBottom:"1px solid #bdf289", paddingBottom:'150px', margin:'-30px', position:'relative'}}  >
-              <Grid md={5}  style={{position:'relative'}}>
-                <img src={AH_BANNER_CASHEWpack} alt="AH_BANNER_CASHEWpack" style={{position:'absolute', top: "-345px",width: '1700px',left: '-701px'}} />
-                <img src={leaf1} alt="leaf1" style={{position:'absolute', left:'500px', top:'100px'}} />
+            <Grid container  className="about-us-container">
+              <Grid md={4}  style={{position:'relative'}}>
+                <img src={AH_BANNER_CASHEWpack} alt="AH_BANNER_CASHEWpack"  className="cashew-pack" />
+                <img src={leaf1} alt="leaf1" className="leaf1" />
               </Grid>
-              <Grid md="7">
-                <div id="#about" >
-                  <h1 align="right" style={{fontWeight:'900', fontSize:'100px' }} className="about_us" id="aboutus" >
+              <Grid md="8">
+                <div id="#about" className="about-us-section " >
+                  <h1 align="right" className="about_us" id="aboutus" >
                     ABOUT US.
                   </h1>
-                  <h2 align="right" style={{alignItems:'right', fontSize:'40px'}} className="healthy_cashews">
+                  <h2 align="right" className="healthy_cashews">
                     It’s not about just a Cashew, it’s all<br/>
                     <span>about <span style={{color:'#1aaa4e'}}>healthy cashews.!</span></span>
                   </h2>
                   <p align="right" style={{lineHeight:"1.5", fontSize:'24px'}} className="sailing_para">
-                    Sailing from Kollam, the eponymous city, the cashew capital of world  exporting Lakhs of tonnes to USA, Japan, Saudi Arabia etc we marked our presence two decades back. We understood that our people,
+                    Sailing from Kollam, the eponymous city, the cashew capital of world exporting Lakhs of tonnes to USA, Japan, Saudi Arabia etc we marked our presence two decades back. We understood that our people,
                     despite being in a cashew hub are not getting the export quality
                     premium Cashew nuts. So they went for what was cheap.
                   </p>
                   <p align="right"  style={{lineHeight:'1.5', fontSize:'24px'}} className="sailing_para">
                   So we decided to serve our people the premium healthy nuts for what they can afford. We will serve you only the best. We value your Health as we know for sure that your health is our wealth.
                   </p>
-                  <p align="right" style={{color:'#1aaa4e', fontSize:'24px'}} className="sailing_para"><strong>Harvest.Process.Produce</strong></p>
+                  <p align="right" style={{color:'#1aaa4e', fontSize:'24px'}} className="sailing_para"><strong>Harvest. Process. Produce</strong></p>
                 </div>
               </Grid>
               <Grid md={12}>
@@ -309,7 +309,7 @@ class App extends Component {
                   So we decided to serve our people the premium healthy nuts for what they can afford. We will serve you only the best. We value your Health as we know for sure that your health is our wealth.
                 </p>
                 <p style={{color:'#1aaa4e', fontSize:'20px'}} className="sailing_para">
-                  <strong>Harvest.Process.Produce</strong>
+                  <strong>Harvest</strong>
                 </p>
               </div>
             </Grid>
@@ -330,8 +330,7 @@ class App extends Component {
               <ReactPlayer 
                 width="100%"
                 height="100%"
-                url="https://www.facebook.com/412824289509386/videos/2912907732367114"
-                light={slide1}
+                url="https://www.facebook.com/412824289509386/videos/2912907732367114"asian
               /> 
             </Grid>
           </Grid>
