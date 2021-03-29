@@ -35,6 +35,7 @@ body {
         .navigation-container-mobile {
           padding: 15px;
           position: fixed;
+          z-index: 1000;
         }
         .animation-container {
           position: relative;
